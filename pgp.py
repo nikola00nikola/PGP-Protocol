@@ -577,32 +577,4 @@ def generateDsaKeys(n):
     return (priv.public_key(), priv)
 
 
-"""
-private_key = dsa.generate_private_key(
-    key_size=1024,
-)
-data = b"this is some data I'd like to sign"
-private_key = deserializeDsaPrivKey(serializeDsaPrivKey(private_key))
-signature = private_key.sign(
-    data,
-    hashes.SHA256()
-)
-public_key = private_key.public_key()
-public_key = deserializeDsaPubKey(serializeDsaPubKey(public_key))
-try:
-    public_key.verify(
-        signature,
-        data,
-        hashes.SHA256()
-    )
-except:
-    print('Wrong')
-"""
-"""
-k = ElGamal.generate(1024, None)
-M = 'Ovo je poruka.txt'
-C = encryptElGamal(k, M)
-print(C)
-k = serializeElGamalPrivKey(k)
-k = deserializeElGamalPrivKey(k)
-print(decryptElGamal(k, C))"""
+
